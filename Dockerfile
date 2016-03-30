@@ -8,6 +8,5 @@ RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=acc
     rpm -Uvh jre-8u77-linux-x64.rpm && \
     rm -f jre-8u77-linux-x64.rpm && \
     rm -f MD5SUM
-
-RUN export JAVA_HOME=/usr/java/jre1.8.0_77
+ENV JAVA_HOME=/usr/java/jre1.8.0_77
 
